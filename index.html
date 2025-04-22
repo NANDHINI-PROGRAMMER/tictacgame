@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <style>
+    body{
+        /* background: #180b0b; */
+        background: linear-gradient(to right, #641904, #acb6e5);
+    }
+    /* body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+} */
+/*  */
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+      margin: 50px auto;
+      width: max-content;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 2em;
+      text-align: center;
+      line-height: 100px;
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Tic Tac Toe</h2>
+<div class="board" id="board"></div>
+<p style="text-align:center;" id="status"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
